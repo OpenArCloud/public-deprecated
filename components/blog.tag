@@ -1,8 +1,9 @@
 <blog>
-    <div class="show article" each={this.opts.features}>
+    <div class="show article" each={opts.features}>
         <article 
             title={title} 
-            author={author} 
+            author={author}
+            date={date} 
             subtitle={subtitle}
             pretitle={pretitle} 
             entry={entry} 
@@ -29,7 +30,11 @@ this.on('mount', ()=>{
         let context = this;
 
         (async function(){ 
-            let arr = await asyncLoadAllJSONS(files); 
+            let arr = await asyncLoadAllJSONS(files);
+            arr = arr.map(file => {
+                file.date = simpleDateToPrettyDate(file.date);
+                return file;
+            }); 
             console.log(arr);
             context.opts.features = arr;
             context.update();

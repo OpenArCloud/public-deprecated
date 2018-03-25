@@ -1,7 +1,7 @@
 <app>
 
   <script>
-  this.currentRoute = '';
+  //this.currentRoute = '';
   
 
   </script>
@@ -89,7 +89,7 @@
   
 
   this.on('mount', ()=>{
-    this.currentRoute = "home";
+    //this.currentRoute = "home";
     
     let contentCont = document.getElementById('content');
     
