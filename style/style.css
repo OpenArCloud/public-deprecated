@@ -155,11 +155,16 @@ app .content{
     margin-top:40px;
 }
 
+.content #team img {
+    margin-bottom:30px;
+}
+
 .content #team bio img{
     border-radius:50%;
     width:250px;
     max-height:250px;
     filter: grayscale(100%);
+    margin-top:20px;
 }
 
 .content #team h1{

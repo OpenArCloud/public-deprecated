@@ -77,9 +77,7 @@
         
       
       <div id="faq">
-          <h1>FAQ</h1>
-          <p>...coming soon</p>
-        
+          <faq/>      
       </div>
   </div>
   <!--<div class="footer">Footer</div>-->
