@@ -24,7 +24,7 @@
   <div class="content" id="content">
       <div id="home" class="show">
           <h1>Creating the Open AR-Cloud!</h1>
-          <p>This is an invitation to everyone who would like to participate in creating an AR-Cloud that is buildt on open standards, open data, open source and a respect for the privacy of every user of AR-Cloud solutions.</p>
+          <p>This is an invitation to everyone who would like to participate in creating an AR-Cloud that is built on open standards, open data, open source and a respect for the privacy of every user of AR-Cloud solutions.</p>
           <p>Be sure to check out Norkart's <a href="blog">appeal for an Open-ARCloud community</a>, for an indepth perspective on the motivation behind starting this commuity.</b>
         <p>Stay tuned for more information in the coming days and weeks! And please sign up for our Slack community:</p>
       
