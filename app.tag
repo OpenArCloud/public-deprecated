@@ -155,7 +155,9 @@
     let menuButton = document.getElementById("menubutton");
     menuButton.onclick =menuToggle;
     
-    
+    if(window.initialRoute != undefined) {
+        routeHandler(window.initialRoute);
+    }
     
 
   })
