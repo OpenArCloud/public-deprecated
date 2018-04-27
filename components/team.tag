@@ -1,4 +1,9 @@
 <team>
+    <style>
+    bio raw br {
+        line-height:20px;
+    }
+    </style> 
     <div class="show" each={opts.team}>
         <bio img={img} name={name} title={title} bio={bio} email={email}/>
     </div>
