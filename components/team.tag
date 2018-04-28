@@ -1,7 +1,7 @@
 <team>
     <style>
     bio raw br {
-        line-height:20px;
+        line-height:40px;
     }
     </style> 
     <div class="show" each={opts.team}>
