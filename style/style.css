@@ -37,7 +37,7 @@ app .cta-button{
     color:white;
     text-decoration: none;
     text-align:center;
-    display:block;
+    display:inline-block;
     box-sizing:border-box;
     padding-left:24px;
     padding-right:24px;
@@ -97,7 +97,13 @@ app .content{
     text-decoration:none;
     cursor:pointer;
 }
-
+.content bio h1,
+.content bio h2,
+.content bio h3,
+.content bio h4 {
+    margin-top:0;
+    margin-bottom:0.5em;
+}
 .content bio biocontent{
     margin-left:40px;
 }
@@ -156,7 +162,7 @@ app .content{
 }
 
 .content #team img {
-    margin-bottom:30px;
+    margin-bottom:8px;
 }
 
 .content #team bio img{
@@ -164,7 +170,7 @@ app .content{
     width:250px;
     max-height:250px;
     filter: grayscale(100%);
-    margin-top:20px;
+    /*margin-top:20px;*/
 }
 
 .content #team h1{
