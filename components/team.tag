@@ -8,7 +8,7 @@
         <bio img={img} name={name} title={title} bio={bio} email={email}/>
     </div>
     
-    <h1>Partners</h1>
+    <h1>Partners & friends:</h1>
     <div class="show" each={opts.partners}>
         <partner logo={logo} name={name} url={url} ></partner>
     </div>

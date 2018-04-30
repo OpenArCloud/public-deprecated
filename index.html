@@ -29,6 +29,21 @@
   <body>
    
     <app></app>
+    <script>
+      window.initialRoute = undefined;
+
+      route.start(true);
+      route.base('/');
+
+      let routeInit = (name)=>{
+        window.initialRoute = name;
+        console.log("initial route: " + name);
+      };
+
+      route('/#*', routeInit);
+      route('/*', routeInit);
+          
+    </script>
     <script src="script/app.js"></script>
     <script type="riot/tag" src="components/qanda.tag"></script>
     <script type="riot/tag" src="components/faq.tag"></script>
@@ -40,23 +55,8 @@
     <script type="riot/tag" src="components/blog.tag"></script>
     <script type="riot/tag" src="app.tag"></script>
     <script>
-
-        window.initialRoute = undefined;
-
-        route.start(true);
-        route.base('/');
-
-        let routeInit = (name)=>{
-          window.initialRoute = name;
-          console.log("initial route: " + name);
-        };
-
-        route('/#*', routeInit);
-        route('/*', routeInit);
-
-
         riot.mount('app');
-      </script>
+    </script>
 
 
   </body>

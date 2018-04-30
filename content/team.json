@@ -50,6 +50,11 @@
             "logo":"img/NTNU-logo.svg"
         },
         {
+            "name":"Open Source Geospatial",
+            "url":"https://www.osgeo.org/",
+            "logo":"img/logo-osgeo.svg"
+        },
+        {
             "name":"Pointmedia AS",
             "url":"https://www.pointmedia.no/",
             "logo":"img/pointmedia-logo.jpg"

@@ -1,9 +1,7 @@
 <app>
 
   <script>
-  //this.currentRoute = '';
-  
-
+    window.oarc = { menuLinkClick: (e)=>{}  };
   </script>
 
   <div class="header">
@@ -12,12 +10,12 @@
       <button id="menubutton" class="menubutton" ></button>
     </div>
     <div id="menu" class="menu">
-      <a href="about">About</a>
-      <a href="team">Team</a>
-      <a href="standards">Standards</a>
-      <a href="projects">Projects</a>
-      <a href="blog">Blog</a>
-      <a href="faq">FAQ</a>
+      <a href="about" onClick={window.oarc.menuLinkClick.bind(this)}>About</a>
+      <a href="team" onClick={window.oarc.menuLinkClick.bind(this)}>Team</a>
+      <a href="standards" onClick={window.oarc.menuLinkClick.bind(this)}>Standards</a>
+      <a href="projects" onClick={window.oarc.menuLinkClick.bind(this)}>Projects</a>
+      <a href="blog" onClick={window.oarc.menuLinkClick.bind(this)}>Blog</a>
+      <a href="faq" onClick={window.oarc.menuLinkClick.bind(this)}>FAQ</a>
   
     </div>
   </div>
@@ -128,30 +126,43 @@
     let myRoutes = ['home', 'about','standards', 'projects', 'team', 'faq', 'blog'];
 
     let routeHandler = (name)=>{
-        let n = name.toLowerCase();
+        let n = name ? name.toLowerCase() : '___';
         if(myRoutes.indexOf(n) != -1){
             console.log("route: " + n);
             if(this.currentRoute != n){
+                
                 setRoute(n);
                 this.currentRoute = n;
+            } else {
+                console.log("current route again");
             }
-
+            toggleOn = false;
             menu.classList.remove('show');
           } else {
               //setRoute("home");
               console.log("route NOT found");
           }
     };
+
+
+    let blogHandler = (year, month, day, name)=>{
+        console.log("bloghandler");
+        console.log(year + month + day + name);
+    }
       
       
-    //route('/blog/*-*-*/*', blogHandler);  
+
+    //route('/blog', blogHandler );  
+    //route('/blog/*-*-*/*', blogHandler);
     route('/#*', routeHandler);
     route('/*', routeHandler);
+   
+  
     
-    
-    
-    
-    
+    window.oarc.menuLinkClick = (e)=>{
+        routeHandler(e.target.href.split('/').pop());
+    };
+
     let menuButton = document.getElementById("menubutton");
     menuButton.onclick =menuToggle;
     

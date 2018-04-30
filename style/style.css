@@ -87,6 +87,13 @@ app .content{
     align-items:flex-start;
 }
 
+.content bio{
+    display:flex;
+    margin-bottom:40px;
+    align-items:flex-start;
+}
+
+
 .content a,.content a:visited {
 
     
@@ -155,6 +162,12 @@ app .content{
 .content #team partners {
     display:block;
     margin-bottom:40px;
+}
+
+.content #team partner{
+    margin-top:20px;
+    margin-bottom:20px;
+    display:block;
 }
 
 .content #team {
